@@ -156,7 +156,7 @@ class Transformer():
 
 #%% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main code block ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description='Apply a blind denoising algorithm based on bm4d to an input MRAW video file.')
     parser.add_argument('cihx',help="Path to the .cihx file for the video. The corresponding .mraw file should be in the same directory.")
     parser.add_argument('x0',help="Start frame of section to sample noise from.",type=int)
     parser.add_argument('x1',help="End frame of section to sample noise from.",type=int)
